@@ -48,3 +48,56 @@ def response_account_area(open_options):
     }
     response = requests.request("GET", url, headers=headers)
     return response
+
+@pytest.fixture(scope='class')
+def response_champion_by_summonerName(open_options):
+    data = open_options
+    summonerName = data['summonerName']
+    token = data["X-Riot-Token"]
+
+    url = f"https://ru.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summonerName}"
+    headers = {
+        'X-Riot-Token': token
+    }
+    response = requests.request("GET", url, headers=headers)
+    return response
+
+@pytest.fixture(scope='class')
+def response_champions_by_summonerId(open_options):
+    data = open_options
+    encryptedSummonerId = data['id']
+    token = data["X-Riot-Token"]
+
+    url = f"https://ru.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/{encryptedSummonerId}"
+    headers = {
+        'X-Riot-Token': token
+    }
+    response = requests.request("GET", url, headers=headers)
+    return response
+
+@pytest.fixture(scope='class')
+def response_champion_by_summonerId(open_options):
+    data = open_options
+    encryptedSummonerId = data['id']
+    championId = 78
+    token = data["X-Riot-Token"]
+
+    url = f"https://ru.api.riotgames.com/lol/champion-mastery/v4/champion-masteries/by-summoner/{encryptedSummonerId}/by-champion/{championId}"
+    headers = {
+        'X-Riot-Token': token
+    }
+    response = requests.request("GET", url, headers=headers)
+    return response
+
+@pytest.fixture(scope='class')
+def response_champion_rotation(open_options):
+    data = open_options
+    token = data["X-Riot-Token"]
+
+    url = f"https://ru.api.riotgames.com/lol/platform/v3/champion-rotations"
+    headers = {
+        'X-Riot-Token': token
+    }
+    response = requests.request("GET", url, headers=headers)
+    return response
+

@@ -6,6 +6,7 @@ import functions
 class TestAccountInfoPuuId():
     def test_account_info_by_puuid(self, response_account_by_puuid):
         response = response_account_by_puuid
+        functions.is_response_JSON_format(response)
         functions.is_response_status_200(response)
 
     def test_info_by_puuid_contains_puuid(self, response_account_by_puuid):
@@ -27,6 +28,7 @@ class TestAccountInfoPuuId():
 class TestAccountInfoUserName():
     def test_account_info_by_userName(self, response_account_by_gameName):
         response = response_account_by_gameName
+        functions.is_response_JSON_format(response)
         functions.is_response_status_200(response)
 
     def test_account_info_by_userName_contains_puuid(self, response_account_by_gameName):
@@ -52,10 +54,12 @@ class TestAccountInfoUserName():
 class TestAccountInfoArea():
     def test_account_info_area(self, response_account_area):
         response = response_account_area
+        functions.is_response_JSON_format(response)
         functions.is_response_status_200(response)
 
     def test_account_info_area_contains_activeShard(self, response_account_area):
         response = response_account_area
         response_json = json.loads(response.text)
         functions.is_presented_in_JSON(response_json, "activeShard")
+
 
