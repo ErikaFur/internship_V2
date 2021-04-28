@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7407cbf-bd63-4378-a3ca-8a9aa8a02fdc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_CHAMPION.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/options.json" beforeDir="false" afterPath="$PROJECT_DIR$/options.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_ACCOUNT.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_ACCOUNT.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_CHAMPION_MASTERY.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_CHAMPION_MASTERY.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +97,7 @@
       <updated>1619535335034</updated>
       <workItem from="1619535384054" duration="1796000" />
       <workItem from="1619556315929" duration="307000" />
-      <workItem from="1619605789945" duration="12908000" />
+      <workItem from="1619605789945" duration="13578000" />
     </task>
     <servers />
   </component>
